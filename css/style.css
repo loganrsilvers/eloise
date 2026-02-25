@@ -1,8 +1,7 @@
-
 :root{
     --dark-color: #283c3b;
-    --secondary-dark-color: #1c7178;
-    --med-color: #1c7178;
+    --secondary-dark-color: #283c3b;
+    --med-color: #283c3b;
     --secondary-light-color: #eeddd5;
     --white : #f5f5f5;
     --black : #111111;
@@ -240,7 +239,7 @@ color: var(--secondary-dark-color);
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: var(--med-color);
-  text-decoration: underline;
+  color: var(--white);
 }
 
 /* dropdown in index */
@@ -262,7 +261,7 @@ color: var(--secondary-dark-color);
 }
 .dropdown-content a:hover {
     background-color: var(--med-color);
-    color: var(--secondary-light-color);
+    color: var(--white);
     text-decoration: underline;
 }
 
@@ -285,7 +284,7 @@ color: var(--secondary-dark-color);
     background-color: var(--dark-color); 
     scrollbar-color: var(--black) var(--med-color);
     scrollbar-width: none;
-    color: var(--med-color);
+    color: var(--white);
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
@@ -382,7 +381,7 @@ a:hover{
 
 footer {
     background-color: var(--secondary-dark-color);
-    color: var(--dark-color);
+    color: var(--white);
     text-align: center;
     margin-top: 20px;
     position: relative;
