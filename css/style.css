@@ -392,3 +392,6 @@ footer {
     padding-bottom: 10px;
 }
 
+footer a:hover {
+    color: var(--white);
+}

@@ -109,3 +109,80 @@
     border-radius: 4px;
     transition: box-shadow 0.5s, transform 0.5s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden {
+  display: none;
+}
+
+/* Make grid items look like plain cards, not default buttons */
+.grid-item {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+}
+
+/* Ensure images fill their grid item nicely */
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Project view layout */
+.project-view {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.project-nav-top {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-details {
+  flex: 1;
+  text-align: center;
+}
+
+#project-image {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+/* Arrows */
+.nav-arrow {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.nav-arrow:hover {
+  opacity: 0.7;
+}
+
