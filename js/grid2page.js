@@ -196,6 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
   backToGridBtn.addEventListener("click", () => {
     projectView.classList.add("hidden");
     gridSection.classList.remove("hidden");
+    document.querySelector(".slideshow").classList.remove("hidden");
   });
 
   // Previous project
@@ -215,6 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateProjectDetails();
     gridSection.classList.add("hidden");
     projectView.classList.remove("hidden");
+    document.querySelector(".slideshow").classList.add("hidden");
   }
 
   function updateProjectDetails() {
