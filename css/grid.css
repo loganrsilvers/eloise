@@ -74,6 +74,9 @@
     flex: 50%;
     max-width: 50%;
   }
+  #icons{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {

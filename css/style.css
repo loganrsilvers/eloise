@@ -63,77 +63,6 @@ body {
 
 
 
-/* Container for header, icons, and tab */
-.top-strip {
-  display: flex;
-  flex-direction: row;          /* use column if you want them stacked */
-  align-items: flex-start;      /* align all three to the top */
-  justify-content: space-between;
-  gap: 1rem;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0.5rem 1rem;
-}
-
-/* Reset weird spacing/positioning for items in top strip */
-.top-strip header,
-.top-strip #icons,
-.top-strip #tab {
-  margin: 0;
-  padding: 0;
-  position: static;            /* cancel absolute / fixed if you had them */
-  top: auto;
-  left: auto;
-}
-
-/* Header in the top strip */
-.top-strip header {
-  flex: 1 1 auto;              /* let it grow/shrink */
-  display: flex;
-  align-items: center;
-}
-
-/* Icons block */
-.top-strip #icons {
-  flex: 0 0 auto;              /* keep natural width */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Tab block */
-.top-strip #tab {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-/* Make sure the navbar sits below the whole strip */
-.navbar {
-  margin-top: 0.5rem;
-  clear: both;                 /* just in case there are floats above */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 header h1 a {
@@ -151,10 +80,11 @@ header h1 a:hover{
 #logo {
     width: 50%;
     height: auto;
+    position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 0px;
     z-index: 10000000;
 }
 @media screen and (max-width: 768px) {
@@ -171,16 +101,15 @@ img{
 }
 
 #icons {
-    position: relative;
+    position: absolute;
     top: 10px;
     left: 10px;
-    margin-bottom: -120px;
     z-index: 1;
 }
 
 #icons img {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     margin: 5px;
     transition: transform 0.3s;
 }
