@@ -197,6 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
     projectView.classList.add("hidden");
     gridSection.classList.remove("hidden");
     document.querySelector(".slideshow").classList.remove("hidden");
+    document.querySelector(".portfolio-buttons").classList.remove("hidden");
   });
 
   // Previous project
@@ -217,6 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gridSection.classList.add("hidden");
     projectView.classList.remove("hidden");
     document.querySelector(".slideshow").classList.add("hidden");
+    document.querySelector(".portfolio-buttons").classList.add("hidden");
   }
 
   function updateProjectDetails() {

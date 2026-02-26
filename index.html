@@ -33,17 +33,18 @@
 
     <nav>
         <ul>
-            <li>
+            <!-- <li>
                 <div class="dropdown">
                     <button class="dropbtn" onclick="filterPortfolio('all')">Portfolio
                     <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                    <a onclick="filterPortfolio('bio')">Anatomy + Botany</a>
-                    <a onclick="filterPortfolio('editorial')">Editorial</a>
+                        <a onclick="filterPortfolio('bio')">Anatomy + Botany</a>
+                        <a onclick="filterPortfolio('editorial')">Editorial</a>
                     </div>
                 </div>
-            </li>
+            </li> -->
+            <li><a href="index.html">Portfolio</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="press.html">Press</a></li>
         </ul>
@@ -87,6 +88,13 @@
             </div>
         </section>
 
+        <section class="portfolio-buttons">
+            <div id="portfolio-buttons">
+                <button onclick="filterPortfolio('editorial')">Editorial</button>
+                <button onclick="filterPortfolio('all')">All</button>
+                <button onclick="filterPortfolio('bio')">Anatomy + Botany</button>
+            </div>
+        </section>
         <!-- Portfolio grid section -->
         <section>
             <div id="portfolio-grid" class="row">
