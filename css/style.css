@@ -38,7 +38,7 @@ width: 0px;
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-2px);
+    transform: translateY(-0.5px);
   }
 }
 
@@ -62,6 +62,80 @@ body {
 }
 
 
+
+/* Container for header, icons, and tab */
+.top-strip {
+  display: flex;
+  flex-direction: row;          /* use column if you want them stacked */
+  align-items: flex-start;      /* align all three to the top */
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+}
+
+/* Reset weird spacing/positioning for items in top strip */
+.top-strip header,
+.top-strip #icons,
+.top-strip #tab {
+  margin: 0;
+  padding: 0;
+  position: static;            /* cancel absolute / fixed if you had them */
+  top: auto;
+  left: auto;
+}
+
+/* Header in the top strip */
+.top-strip header {
+  flex: 1 1 auto;              /* let it grow/shrink */
+  display: flex;
+  align-items: center;
+}
+
+/* Icons block */
+.top-strip #icons {
+  flex: 0 0 auto;              /* keep natural width */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Tab block */
+.top-strip #tab {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Make sure the navbar sits below the whole strip */
+.navbar {
+  margin-top: 0.5rem;
+  clear: both;                 /* just in case there are floats above */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 header h1 a {
     text-decoration: none;
     color: var(--dark-color);
@@ -80,15 +154,13 @@ header h1 a:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -150px;
-    margin-top: -150px;
+    margin-top: 20px;
     z-index: 10000000;
 }
 @media screen and (max-width: 768px) {
     #logo {
+        margin-top: 1px;
         width: 90%;
-        margin-bottom: -190px;
-        margin-top: -190px;
     }
 }
 
