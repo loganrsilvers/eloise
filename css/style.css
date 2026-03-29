@@ -1,7 +1,8 @@
 :root{
-    --dark-color: #283c3b;
-    --secondary-dark-color: #283c3b;
-    --med-color: #283c3b;
+    --blue: #283c3b;
+    --dark-color: var(--black);
+    --secondary-dark-color: var(--black);
+    --med-color: var(--black);
     --secondary-light-color: #eeddd5;
     --white : #f5f5f5;
     --black : #111111;
@@ -84,12 +85,11 @@ header h1 a:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
+    margin-bottom: -20px;
     z-index: 10000000;
 }
 @media screen and (max-width: 768px) {
     #logo {
-        margin-top: 1px;
         width: 90%;
     }
 }
@@ -117,6 +117,30 @@ img{
     transform: scale(1.2) ;
     border-bottom: var(--dark-color) 1px solid;
 }
+
+
+#sidebar-icons {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+#sidebar-icons a {
+    gap: 10px;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#sidebar-icons a img{
+    width: 30px;
+    height: 30px;
+}
+#sidebar-icons a p{
+    font-size: 16px;
+}
+
 
 @media screen and (max-width: 768px) {
     #icons {

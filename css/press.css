@@ -1,7 +1,8 @@
 :root{
-    --dark-color: #283c3b;
-    --secondary-dark-color: #283c3b;
-    --med-color: #283c3b;
+    --blue: #283c3b;
+    --dark-color: var(--black);
+    --secondary-dark-color: var(--black);
+    --med-color: var(--black);
     --secondary-light-color: #eeddd5;
     --white : #f5f5f5;
     --black : #111111;
@@ -51,6 +52,8 @@ a{
 
 /* thing the image and text is in */
 .box{
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     gap: 1rem;
     padding-bottom: 30px;
@@ -62,6 +65,8 @@ a{
     object-fit:cover;
     width: 200px;
     height: 100%;
+    border-radius:20px;
+    border: solid 2px var(--secondary-dark-color);
 }
  
 .content{
@@ -117,3 +122,9 @@ a{
 }
 
 
+footer {
+    margin-top: -10px;
+}
+footer a {
+    color: var(--white);
+}

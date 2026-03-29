@@ -1,8 +1,9 @@
 
 :root{
-    --dark-color: #283c3b;
-    --secondary-dark-color: #283c3b;
-    --med-color: #283c3b;
+    --blue: #283c3b;
+    --dark-color: var(--black);
+    --secondary-dark-color: var(--black);
+    --med-color: var(--black);
     --secondary-light-color: #eeddd5;
     --white : #f5f5f5;
     --black : #111111;
@@ -39,11 +40,33 @@
     max-width: 100%;
     overflow: hidden;
 }
+#abouttext h3{
+    border-bottom: 2px solid var(--secondary-dark-color);
+}
 
 #aboutimg, #abouttext{
     padding:20px;
 }
 
+@media (max-width: 800px) {
+    #aboutsection{
+        flex-direction:column;
+    }
+    #aboutimg, #abouttext{
+        width: 90%;
+    }
+    #abouttext{
+        padding-top: 0px;
+        margin-top: 0px;
+
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .hideOnMobile {
+        display: none;
+        visibility: collapse;
+    }
+}
 
 
 
@@ -77,25 +100,48 @@
     }
 }
 
+/* THIS IS WHERE THE CAROSEL IS:::  */
 #littleimgs{
     display:flex;
     flex-direction:row;
     justify-content:center;
     align-items:top;
     width: 100%;
-    gap:10px;
+    gap:0px;
     margin: 10px 0;
 }   
 
 #littleimgs img{
     display:block;
-    border-radius: 20px;
+    border-radius: 0px;
     width: 100px;
     object-fit: cover;
 }
 
+#littleimgs button {
+    color: var(--black);
+    font-size: 80px;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.25s;
+}
+@media (max-width: 700px) {
+    #littleimgs button {
+        font-size: 45px;
+        padding: 8px;
+    }
+}
+#littleimgs #prev{
+    border-right: var(--black) solid 2px;
+}
+#littleimgs #next{
+    border-left: var(--black) solid 2px;
+}
 
-
+#littleimgs button:hover{
+    color: var(--white);
+    transition: 0.25s;
+}
 
 
 
