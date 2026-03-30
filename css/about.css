@@ -33,7 +33,7 @@
 }
 #abouttext{
     width:60%;
-    font-size:18px;
+    font-size:1.5vw;
     line-height:1.6;
     /* Ensure child elements like #softwareicons don't overflow */
     box-sizing: border-box;
@@ -58,6 +58,8 @@
     #abouttext{
         padding-top: 0px;
         margin-top: 0px;
+
+        font-size: 18px;
 
         padding-bottom: 0px;
         margin-bottom: 0px;

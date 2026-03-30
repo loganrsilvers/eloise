@@ -87,10 +87,11 @@ a{
 
 .content p{
     margin: 0;
+    font-size: 1.5vw;
 }
  
 .headers{
-    font-size: 20px;
+    font-size: 2vw;
     text-align: right;
     font-weight: normal;
     border-bottom: 2px dashed var(--secondary-dark-color);
@@ -107,6 +108,12 @@ a{
 @media(max-width:730px){
     .box img{
         display: none;
+    }
+    .content p {
+        font-size: 16px;
+    }
+    .headers{
+        font-size: 20px;
     }
 }
  

@@ -72,6 +72,9 @@
   overflow: hidden;
   border: var(--secondary-dark-color) solid 2px;
 }
+.column button {
+  width: 100%;
+}
 
 .column img {
   width: 100%;
@@ -204,7 +207,7 @@
 }
 
 #project-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   margin: 1rem 0;
 }
