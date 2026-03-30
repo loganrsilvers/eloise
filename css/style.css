@@ -108,8 +108,8 @@ img{
 }
 
 #icons img {
-    width: 40px;
-    height: 40px;
+    width: 5vw;
+    height: 5vw;
     margin: 5px;
     transition: transform 0.3s;
 }
