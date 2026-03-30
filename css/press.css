@@ -23,7 +23,6 @@ a{
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    max-width: 1400px;
 }
  
 .imgwrapper{
@@ -44,8 +43,6 @@ a{
 .main{
     display: flex;
     flex-direction: column;
-    flex-grow: 3;
-    flex-basis: 0;
     justify-content: space-between;
     gap: 1rem;
 }
@@ -63,21 +60,16 @@ a{
 .boximg{
     align-self: center;
     object-fit:cover;
-    width: 200px;
+    width: 25vw;
     height: 100%;
     border-radius:20px;
     border: solid 2px var(--secondary-dark-color);
 }
  
 .content{
-    flex-grow: 6;
-    flex-basis: 0;
-    min-width: 220px;
-    height: 220px;
     padding: 1rem;
     scrollbar-width: thin;
     scrollbar-color: var(--dark-color) var(--white);
-    overflow-x: hidden;
     text-align: justify;
     line-height: 1.1;
     display: flex;

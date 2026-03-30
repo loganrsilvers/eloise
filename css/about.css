@@ -72,19 +72,42 @@
 
 
 
+#software-section{
+    border: solid 2px var(--secondary-dark-color);
+    border-radius: 20px;
+    padding: 10px;
+}
 
+#software-section p{
+    text-align: center;
+    font-size: 2vw;
+    border-bottom: 2px dashed var(--secondary-dark-color);
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+@media (max-width: 800px) {
+    #software-section p {
+        font-size: 20px;
+    }
+}
 
 
 #softwareicons{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 15px;
     margin-top: 20px;
     width: 100%;
-    max-width: 100%; /* Restrict to parent width */
     box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    #softwareicons {
+        width: 100%;
+        gap: 10px;
+    }
 }
 
 #softwareicons img{
@@ -92,7 +115,7 @@
     width: 5%;
     flex: 1 1 0;
     object-fit: contain;
-    margin-bottom: 20px;
+
 }
 
 @media (max-width: 600px) {
@@ -101,6 +124,15 @@
         max-width: 60px;
     }
 }
+
+
+
+
+
+
+
+
+
 
 /* THIS IS WHERE THE CAROSEL IS:::  */
 #littleimgs{
