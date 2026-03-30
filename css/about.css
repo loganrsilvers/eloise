@@ -185,3 +185,79 @@
   background: var(--med-color);
   color: var(--dark-color);
 }
+
+
+
+
+
+
+
+
+
+/* ANIMATIONSSSSSSSSSSSSSSS */
+
+/* Scroll reveal for about sections */
+#aboutsection {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 700ms ease, transform 700ms ease;
+  will-change: opacity, transform;
+}
+
+#aboutsection.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Alternate direction for a little visual rhythm */
+#aboutsection:nth-of-type(odd) {
+  transform: translateX(-24px);
+}
+
+#aboutsection:nth-of-type(even) {
+  transform: translateX(24px);
+}
+
+#aboutsection.is-visible:nth-of-type(odd),
+#aboutsection.is-visible:nth-of-type(even) {
+  transform: translateX(0) translateY(0);
+}
+
+/* Image polish */
+#aboutimg img {
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+#aboutimg:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* Software icons animate in */
+#softwareicons img {
+  opacity: 0;
+  transform: translateY(10px) scale(0.95);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+#softwareicons.is-visible img {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+#softwareicons.is-visible img:nth-child(1) { transition-delay: 40ms; }
+#softwareicons.is-visible img:nth-child(2) { transition-delay: 80ms; }
+#softwareicons.is-visible img:nth-child(3) { transition-delay: 120ms; }
+#softwareicons.is-visible img:nth-child(4) { transition-delay: 160ms; }
+#softwareicons.is-visible img:nth-child(5) { transition-delay: 200ms; }
+#softwareicons.is-visible img:nth-child(6) { transition-delay: 240ms; }
+
+/* Mobile safety */
+@media (max-width: 900px) {
+  #aboutsection,
+  #softwareicons img {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
