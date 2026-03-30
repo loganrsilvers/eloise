@@ -41,9 +41,16 @@
   color: var(--white);
   border: none;
   padding: 10px 20px;
-  font-size: 17px;
+  font-size: 2vw;
   cursor: pointer;
   border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  #portfolio-buttons button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
 }
 
 #portfolio-buttons button:hover {

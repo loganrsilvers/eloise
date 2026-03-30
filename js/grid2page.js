@@ -160,6 +160,12 @@ const projects = [
     title: "plants",
     image: "img/art/plants/9.png",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu."
+  },
+  {
+    id: 28,
+    title: "Shooting from the hip",
+    image: "img/art/woman.png",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu."
   }
 ];
 
