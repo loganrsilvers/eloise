@@ -225,7 +225,17 @@ document.addEventListener("DOMContentLoaded", () => {
     projectView.classList.remove("hidden");
     document.querySelector(".slideshow").classList.add("hidden");
     document.querySelector(".portfolio-buttons").classList.add("hidden");
+    document.body.style.overflow = "hidden"; 
   }
+
+  // In back-to-grid handler:
+backToGridBtn.addEventListener("click", () => {
+  projectView.classList.add("hidden");
+  gridSection.classList.remove("hidden");
+  document.querySelector(".slideshow").classList.remove("hidden");
+  document.querySelector(".portfolio-buttons").classList.remove("hidden");
+  document.body.style.overflow = ""; // restore scroll
+});
 
   function updateProjectDetails() {
     const project = projects[currentProjectIndex];

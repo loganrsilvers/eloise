@@ -150,7 +150,7 @@ img{
 
 #tab {
     position: fixed;
-    font-size: 15px;
+    font-size: 2vw;
     right: 0;
     top: 10px;
     background-color: var(--dark-color);
@@ -364,31 +364,6 @@ i:hover{
     animation-fill-mode: none;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-form label {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-form input, form textarea {
-    padding: 8px;
-    border: 1px solid var(--dark-color);
-    border-radius: 4px;
-    font-family: 'paper', sans-serif;
-}
-form input[type="submit"] {
-    background-color: var(--dark-color);
-    color: var(--white);
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-}
-form input[type="submit"]:hover {
-    background-color: var(--secondary-dark-color);
-}
 
 
 

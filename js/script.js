@@ -17,9 +17,10 @@ allContainers.forEach(container => {
   });
 });
 
+// CHANGE THE WIDTH OF THE SIDE NAV 
 function openNav() {
      document.getElementById("mySidenav").style.opacity = "1";
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "35vw";
     document.getElementById("tab").style.display = "none";
 }
 function closeNav() {
