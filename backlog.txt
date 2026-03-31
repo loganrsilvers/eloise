@@ -1,0 +1,16 @@
+from asha
+- some images have rounded corners (in about, press) and some don't (the homepage gallery) some consistency will help the overall design language
+- the sizes of the anatomical images in the homepage gallery change when hovering and its a little jarring
+- when clicking on artwork for the full view, I'd recommend scaling images to the viewport width/height (instead of needing to scroll to see the full image)
+- also in the full view, I personally dont think header and footer are needed. the full image preview can just take up the entire viewport without scrolling, would make it look nice and seamless
+- contact me side window feels squished and could be wider + better side margins
+- some links are underlined with a solid line, others are underlined with dashed lines. I didn't think the dotted lines in the press page were links at first
+- for the links in the press page, there's also a "read more" link at the end of each section. can be repetitive since the title is also linked. I'd probably just keep the "read more" link instead of linking the title for clarity
+- also, "read more" link is not underlined so it's not immediately obvious that it's a link
+luis 
+- bottom images in grid do not align to the thing
+grace
+- arrow anchoring on click into works
+- about modules allignment = more centered
+- hover on software things
+- scroll indication on page opening
