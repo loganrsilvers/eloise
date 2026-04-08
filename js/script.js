@@ -17,18 +17,6 @@ allContainers.forEach(container => {
   });
 });
 
-// CHANGE THE WIDTH OF THE SIDE NAV 
-function openNav() {
-     document.getElementById("mySidenav").style.opacity = "1";
-    document.getElementById("mySidenav").style.width = "35vw";
-    document.getElementById("tab").style.display = "none";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("mySidenav").style.opacity = "0";
-    document.getElementById("tab").style.display = "block";
-}
-
 
 function filterPortfolio(category) {
   const items = document.querySelectorAll('.img-container');
