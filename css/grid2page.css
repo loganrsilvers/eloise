@@ -21,7 +21,7 @@
   inset: 0;
   background: var(--white);
   z-index: 9999;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .project-nav-top {

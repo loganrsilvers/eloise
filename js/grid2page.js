@@ -119,12 +119,12 @@ const projects = [
     image: "img/art/plants/10.png",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus viverra nulla ut metus varius laoreet."
   },
-  {
-    id: 21,
-    title: "Deerbat",
-    image: "img/art/deerbat.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue."
-  },
+  // {
+  //   id: 21,
+  //   title: "Deerbat",
+  //   image: "img/art/deerbat.png",
+  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue."
+  // },
   {
     id: 22,
     title: "Robot",
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
     projectView.classList.remove("hidden");
     document.querySelector(".slideshow").classList.add("hidden");
     document.querySelector(".portfolio-buttons").classList.add("hidden");
-    document.body.style.overflow = "hidden"; 
+    document.body.style.overflow = ""; 
   }
 
   // In back-to-grid handler:
