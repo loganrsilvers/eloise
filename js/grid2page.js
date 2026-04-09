@@ -3,169 +3,103 @@ const projects = [
     id: 1,
     title: "Nose",
     image: "img/art/nose.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec."
+    description: "Diversity in Medical Illustration: External Nose Anatomy on Roman Nose, 2025, Digitally Illustrated, 1080 x 1350 px."
   },
   {
     id: 2,
-    title: "Sheep",
-    image: "img/art/sheep.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue."
+    title: "Castle",
+    image: "img/art/castle.png",
+    description: "Environmental Illustration: Dracula's Castle, 2023, Pen and ink digitally colored, 11 x 8.5 in."
   },
   {
     id: 3,
-    title: "comic",
-    image: "img/art/comic.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum in, dolor. Pellentesque facilisis, nulla imperdiet fermentum."
+    title: "Sheep",
+    image: "img/art/sheep.png",
+    description: "Spot Illustration: Wool on Wool, 2023, Pen and Ink, 8 x 8 in."
   },
   {
     id: 4,
-    title: "Castle",
-    image: "img/art/castle.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur at lacus ac velit ornare lobortis."
+    title: "Comic",
+    image: "img/art/comic.png",
+    description: "Howling Page Edition Two: Are you Prepared?, featured in artist collaboration newspaper, 2026, Pen and Ink, 9 x 12 in."
   },
   {
     id: 5,
     title: "Pen PFP",
     image: "img/art/penpfp.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus."
+    description: "Spot Illustration: Pen Portrait, 2022, Pen and Ink, 9 x 12 in."
   },
   {
     id: 6,
-    title: "Large-flowered Tickseed, Coreopsis grandiflora",
-    image: "img/art/plants/1.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus. Vivamus elementum semper nisi."
+    title: "Matcha",
+    image: "img/art/matcha.png",
+    description: "Spot Illustration: Matcha Elephant, 2024, Watercolor, 8 x 8 in."
   },
   {
     id: 7,
-    title: "Goldenrod, Solidago",
-    image: "img/art/plants/6.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu."
+    title: "Eye",
+    image: "img/art/eye.png",
+    description: "Diversity in Medical Illustration: Tear Film Anatomy on Mono-lid, 2025, Digitally Illustrated, 1200 x 1800 px."
   },
   {
     id: 8,
-    title: "Eye",
-    image: "img/art/eye.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero."
+    title: "Landscape Inked",
+    image: "img/art/landscapeinked.png",
+    description: "Environmental Illustration: Forest Robot, 2025, Pen and ink digitally colored, 9 x 12 in."
   },
   {
     id: 9,
-    title: "Matcha",
-    image: "img/art/matcha.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
+    title: "Fire",
+    image: "img/art/fire.png",
+    description: "Environmental Illustration: Forest Fire Spirit, Pen and Ink Digitally Colored, 9 x 12 in."
   },
   {
     id: 10,
-    title: "Landscape Inked",
-    image: "img/art/landscapeinked.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum felis eu pede mollis pretium. Integer tincidunt."
+    title: "Bindweed",
+    image: "img/art/plants/11.png",
+    description: "Chicagoland invasive plants: Bindweed (Convolvulus arvensis), 2026, Watercolor pencil pen and ink, 9 x 12 in framed."
   },
   {
     id: 11,
-    title: "Fire",
-    image: "img/art/fire.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc."
+    title: "Tree of Heaven",
+    image: "img/art/plants/10.png",
+    description: "Chicagoland invasive plants: Tree of Heaven (Ailanthus altissima), 2026, Watercolor pencil pen and ink, 9 x 12 in framed."
   },
   {
     id: 12,
-    title: "Foxglove Beardtongue, Penstemon digitalis",
-    image: "img/art/plants/2.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem."
+    title: "Ear",
+    image: "img/art/ear.png",
+    description: "Diversity in Medical Illustration: External Ear Anatomy with piercings and deep skin-tone, 2025, Digitally Illustrated, 2048 x 2028 px."
   },
   {
     id: 13,
-    title: "Red Columbine (Aquilegia canadensis)",
-    image: "img/art/plants/7.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec odio et ante tincidunt tempus. Donec pede justo, fringilla vel."
+    title: "Metamorphosis",
+    image: "img/art/metamorphosis.png",
+    description: "Book cover design: The Metamorphosis, 2025, Pen and Ink, 9 x 12 in."
   },
   {
     id: 14,
-    title: "plants",
-    image: "img/art/plants/11.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies mi eu turpis hendrerit fringilla."
+    title: "Shooting from the Hip",
+    image: "img/art/woman.png",
+    description: "Spot Illustration: Shooting from the Hip, 2026, Pen and Ink with digital color."
   },
   {
     id: 15,
-    title: "Ear",
-    image: "img/art/ear.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat pretium libero. Cras id dui."
+    title: "Warrior Inked",
+    image: "img/art/warrorinked.png",
+    description: "Spot Illustration: Faithful Paladin, 2025, Pen and Ink Digitally Colored, 8 x 8 in."
   },
   {
     id: 16,
-    title: "Goat Inked",
-    image: "img/art/goatinked.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus."
+    title: "Pillbug",
+    image: "img/art/pillbug.png",
+    description: "Mini Exhibition Piece: Pillbug Taxidermy Mini-Comic, 2023, Colored Pencil Pen and Ink, 3 x 6 in."
   },
   {
     id: 17,
-    title: "Metamorphosis",
-    image: "img/art/metamorphosis.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi."
-  },
-  {
-    id: 18,
-    title: "Swamp milkweed, Asclepias incarnata",
-    image: "img/art/plants/3.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
-  },
-  {
-    id: 19,
-    title: "New England Aster (Symphyotrichum novae-angliae)",
-    image: "img/art/plants/8.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus."
-  },
-  {
-    id: 20,
-    title: "plants",
-    image: "img/art/plants/10.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus viverra nulla ut metus varius laoreet."
-  },
-  // {
-  //   id: 21,
-  //   title: "Deerbat",
-  //   image: "img/art/deerbat.png",
-  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue."
-  // },
-  {
-    id: 22,
-    title: "Robot",
-    image: "img/art/robot.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper ultricies nisi. Nam eget dui."
-  },
-  {
-    id: 23,
-    title: "Warrior Inked",
-    image: "img/art/warrorinked.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus."
-  },
-  {
-    id: 24,
-    title: "Pillbug",
-    image: "img/art/pillbug.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
-  },
-  {
-    id: 25,
-    title: "Anise hyssop (Agastache foeniculum)",
-    image: "img/art/plants/4.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
-  },
-  {
-    id: 26,
-    title: "Black-eyed Susan (Rudbeckia hirta)",
-    image: "img/art/plants/5.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat massa quis enim. Donec pede justo, fringilla vel."
-  },
-  {
-    id: 27,
-    title: "plants",
+    title: "Dandelion",
     image: "img/art/plants/9.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu."
-  },
-  {
-    id: 28,
-    title: "Shooting from the hip",
-    image: "img/art/woman.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu."
+    description: "Chicagoland invasive plants: Dandelion (Taraxacum officinale), 2026, Watercolor pencil pen and ink, 9 x 12 in framed."
   }
 ];
 
