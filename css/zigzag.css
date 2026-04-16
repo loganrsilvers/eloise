@@ -90,12 +90,6 @@ a{
 }
  
  
-#credit{
-    font-size: 12px;
-    position: fixed;
-    bottom: 0px;
-    right: 0;
-}
  
 @media(max-width:730px){
     .box img{
