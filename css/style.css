@@ -104,43 +104,22 @@ img{
 
 #icons {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 10px;
     left: 10px;
     z-index: 1;
 }
 
 #icons img {
-    width: 5vw;
-    height: 5vw;
-    margin: 5px;
+    width: 2.9vw;
+    height: 2.9vw;
+    margin: 3px;
     transition: transform 0.3s;
 }
 #icons img:hover {
     transform: scale(1.2) ;
     border-bottom: var(--dark-color) 1px solid;
-}
-
-
-#sidebar-icons {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    padding: 0px;
-    margin: 0px;
-}
-#sidebar-icons a {
-    gap: 10px;
-    margin-left: -10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-#sidebar-icons a img{
-    width: 30px;
-    height: 30px;
-}
-#sidebar-icons a p{
-    font-size: 16px;
 }
 
 
@@ -150,33 +129,6 @@ img{
     }
 }
 
-#tab {
-    position: fixed;
-    font-size: 2vw;
-    right: 0;
-    top: 10px;
-    background-color: var(--dark-color);
-    color: var(--white);
-    padding: 10px;
-    border-radius: 8px 0 0 8px;
-    cursor: pointer;
-    font-family: 'cursive', sans-serif;
-    z-index: 2;
-    animation: slide-in 1000ms;
-}
-
-#tab:hover{
-    text-decoration: underline;
-    text-decoration-color: var(--white);
-    color: var(--secondary-light-color);
-    transition: color 0.25s ease-in-out;
-}
-
-@media screen and (max-width: 768px) {
-    #tab {
-        display: none;
-    }
-}
 
 header {
     background-color: var(--white);
