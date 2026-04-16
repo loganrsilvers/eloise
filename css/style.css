@@ -120,9 +120,9 @@ img{
 }
 
 #icons img {
-    width: 2.9vw;
-    height: 2.9vw;
-    margin: 3px;
+    width: 2.3vw;
+    height: 2.3vw;
+    margin: 2px;
     transition: transform 0.3s;
 }
 #icons img:hover {
