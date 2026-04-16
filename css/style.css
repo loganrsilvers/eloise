@@ -16,7 +16,7 @@
 }
 @font-face {
     font-family: 'cursive';
-    src: url(fonts/cursive.ttf);
+    src: url(fonts/handCursive.ttf);
 }
 
 ::-webkit-scrollbar{
