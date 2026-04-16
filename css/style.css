@@ -65,7 +65,15 @@ body {
 }
 
 
-
+@media (min-width: 900px) {
+    header h1 a{
+        font-size: 5vw;
+    }
+    nav ul {
+        font-size: 1.5vw;
+    }
+    
+}
 
 
 header h1 a {

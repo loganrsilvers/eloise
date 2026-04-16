@@ -27,6 +27,17 @@
     max-width: 100%;
     overflow: hidden;
 }
+
+#BIGcontactsection{
+    width:100%;
+    font-size:1.5vw;
+    line-height:1.6;
+    /* Ensure child elements like #softwareicons don't overflow */
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
+}
+
 #contactsection h3{
     border-bottom: 2px solid var(--secondary-dark-color);
 }
@@ -53,56 +64,3 @@ iframe {
 
 
 
-
-
-/* ANIMAAAAAATTTTTTTTTIONSSS */
-
-/* Scroll reveal for contact main */
-/* Add this to your CSS */
-
-#contactmain {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  margin-bottom: 40px;
-  gap: 20px;
-  
-  /* Animation properties */
-  opacity: 0;
-  transform: translateY(20px);
-  animation: smoothFadeInUp 0.8s ease-out forwards;
-}
-
-@keyframes smoothFadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Optional: add a slight delay to the image and section for a staggered effect */
-#contactimg {
-  opacity: 0;
-  transform: translateX(-20px);
-  animation: smoothFadeInLeft 0.8s ease-out 0.2s forwards;
-}
-
-#contactsection {
-  opacity: 0;
-  transform: translateX(20px);
-  animation: smoothFadeInRight 0.8s ease-out 0.2s forwards;
-}
-
-@keyframes smoothFadeInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes smoothFadeInRight {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
