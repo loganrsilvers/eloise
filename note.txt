@@ -1,0 +1,23 @@
+slideshow for the flowers 
+slideshow for food safety 
+(same as portfolio grid) 
+add contact for use button (reroute to contact page)
+
+portfolio grid zoom in: fix styling (back button fixed)
+watermark across all zoomed in grid 
+shooting from the hip move to top
+flower gif click to bigger flower gif
+
+< BIG PICTURE >
+t i n y pictures below 
+
+fix "save image as" function 
+
+footer - bigger footer 
+
+mobile view 
+fix header, navbar (education?)
+
+about_>
+left aligned text 
+scrape from linkedin and reapply

@@ -247,6 +247,12 @@ footer {
     padding-bottom: 10px;
 }
 
-footer a:hover {
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+.footer a:hover {
     color: var(--white);
 }
