@@ -1,0 +1,56 @@
+/* ============================================================
+   base.css: element defaults (body, links, images, animations)
+   ============================================================ */
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+@keyframes slide-in {
+    from { transform: translateX(100%); }
+    to   { transform: translateX(0%); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-0.5px); }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'paper', sans-serif;
+    background-color: var(--white);
+    color: var(--dark-color);
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+img {
+    width: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+}
+
+a:hover {
+    font-style: italic;
+    color: var(--secondary-dark-color);
+    animation: bounce 0.3s ease-out;
+    animation-fill-mode: none;
+}
+
+i {
+    display: inline-block;
+    color: var(--white);
+}
+
+i:hover {
+    animation: bounce 0.3s ease-out;
+    animation-fill-mode: none;
+}

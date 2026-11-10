@@ -1,0 +1,10 @@
+/* ============================================================
+   resources.css: resources.html only
+   Cards come from shared/css/components/zigzag-cards.css.
+   Put styles that only this page needs here.
+   ============================================================ */
+
+/* Footer sits flush on this page */
+footer {
+    margin-top: -10px;
+}

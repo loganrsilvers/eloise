@@ -1,0 +1,27 @@
+/* ============================================================
+   tokens.css: design tokens shared by every page
+   Colors live here once. Fonts point at /assets/fonts.
+   ============================================================ */
+
+:root {
+    --blue: #283c3b;
+    --red: #c24536;
+    --darkred: #763026;
+    --white: #f5f5f5;
+    --black: #111111;
+
+    --dark-color: var(--black);
+    --secondary-dark-color: var(--black);
+    --med-color: var(--black);
+    --secondary-light-color: #eeddd5;
+}
+
+@font-face {
+    font-family: 'paper';
+    src: url(../../assets/fonts/demibold.ttf);
+}
+
+@font-face {
+    font-family: 'cursive';
+    src: url(../../assets/fonts/handCursive.ttf);
+}
