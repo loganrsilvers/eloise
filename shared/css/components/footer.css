@@ -1,0 +1,24 @@
+/* ============================================================
+   footer.css: site footer
+   ============================================================ */
+
+footer {
+    background-color: var(--secondary-dark-color);
+    color: var(--white);
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    padding: 10px 0;
+    padding-bottom: 10px;
+}
+
+/* Links stay white on the dark footer, including on hover.
+   (Previously `.footer a:hover`, but there is no .footer class,
+   so links turned black-on-black on hover.) */
+footer a,
+footer a:hover {
+    color: var(--white);
+}

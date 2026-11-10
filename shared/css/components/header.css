@@ -1,0 +1,81 @@
+/* ============================================================
+   header.css: site title + social icon strip (.topstrip)
+   ============================================================ */
+
+header {
+    background-color: var(--white);
+    border-color: var(--dark-color);
+    color: var(--dark-color);
+    font-family: 'cursive', sans-serif;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--dark-color);
+    cursor: pointer;
+    z-index: 3;
+}
+
+header h1 a:hover {
+    text-decoration: none;
+    font-style: normal;
+    color: var(--dark-color);
+}
+
+@media (min-width: 900px) {
+    header h1 a {
+        font-size: 5vw;
+    }
+}
+
+#logo {
+    width: 50%;
+    height: auto;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+    z-index: 10000000;
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        width: 90%;
+    }
+}
+
+/* Social icons, top-left */
+#icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+#icons img {
+    width: 2.3vw;
+    height: 2.3vw;
+    margin: 2px;
+    transition: transform 0.3s;
+}
+
+#icons img:hover {
+    transform: scale(1.2);
+    border-bottom: var(--dark-color) 1px solid;
+}
+
+@media screen and (max-width: 768px) {
+    #icons {
+        display: none;
+    }
+}

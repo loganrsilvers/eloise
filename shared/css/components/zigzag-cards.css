@@ -1,12 +1,7 @@
-:root{
-    --blue: #283c3b;
-    --dark-color: var(--black);
-    --secondary-dark-color: var(--black);
-    --med-color: var(--black);
-    --secondary-light-color: #eeddd5;
-    --white : #f5f5f5;
-    --black : #111111;
-}
+/* ============================================================
+   zigzag-cards.css: image + text cards (.container > .main > .box)
+   Used by: resources.html, about.html (press section)
+   ============================================================ */
 
 *{
     box-sizing: border-box;
@@ -134,14 +129,3 @@ a{
         grid-template-columns: 1fr;
     }
 }
-
-
-footer {
-    margin-top: -10px;
-}
-footer a {
-    color: var(--white);
-}
-
-
-

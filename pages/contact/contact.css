@@ -1,3 +1,7 @@
+/* ============================================================
+   contact.css: contact.html only (photo + embedded Google Form)
+   ============================================================ */
+
 #contactmain {
     display:flex;
     flex-direction:row;
@@ -55,12 +59,3 @@ iframe {
     border: none;
     object-fit: cover;
 }
-
-
-
-
-
-
-
-
-

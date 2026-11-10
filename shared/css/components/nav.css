@@ -1,0 +1,61 @@
+/* ============================================================
+   nav.css: main navigation bar
+   ============================================================ */
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: var(--white);
+    border-top: solid 2px var(--secondary-dark-color);
+    border-bottom: solid 2px var(--secondary-dark-color);
+    border-left: none;
+    border-right: none;
+    color: var(--secondary-dark-color);
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+nav span {
+    cursor: pointer;
+}
+
+nav span:hover {
+    color: var(--med-color);
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    nav ul {
+        font-size: 1.5vw;
+    }
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: var(--dark-color);
+    text-decoration: none;
+    margin: 0;
+}
+
+/* Current page in the nav */
+.active {
+    color: var(--red) !important;
+}
+
+.navbar a:hover {
+    background-color: var(--med-color);
+    color: var(--white);
+}

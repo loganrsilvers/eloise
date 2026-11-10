@@ -1,0 +1,12 @@
+/* ============================================================
+   site.css: the shared shell every page links first.
+   Page-specific styles live next to each page in /pages/<page>/.
+   Shared components that only SOME pages use (e.g. zigzag-cards)
+   are linked directly by those pages, not imported here.
+   ============================================================ */
+
+@import url("tokens.css");
+@import url("base.css");
+@import url("components/header.css");
+@import url("components/nav.css");
+@import url("components/footer.css");

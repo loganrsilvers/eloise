@@ -1,0 +1,248 @@
+/* ============================================================
+   portfolio.css: index.html only
+   1. Grid (tiles are rendered by portfolio.js from artworks.js)
+   2. Project detail view
+   ============================================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ---------- 1. Grid ---------- */
+
+/* Category filter buttons (styled, not on the page yet) */
+#portfolio-buttons {
+    background-color: var(--dark-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#portfolio-buttons button {
+    background-color: var(--secondary-dark-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5vw;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    #portfolio-buttons button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+#portfolio-buttons button:hover {
+    background-color: var(--white);
+    color: var(--dark-color);
+    transition: 0.3s;
+}
+
+/* Native CSS columns replace the old hand-made .row/.column divs:
+   tiles flow top-to-bottom down column 1, then 2, then 3. */
+.portfolio-grid {
+    columns: 3;
+    column-gap: 8px;
+    padding: 8px 8px 0;
+}
+
+@media screen and (max-width: 800px) {
+    .portfolio-grid { columns: 2; }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-grid { columns: 1; }
+}
+
+.portfolio-grid .img-container {
+    position: relative;
+    margin: 0 0 8px;
+    overflow: hidden;
+    border: var(--secondary-dark-color) solid 2px;
+    break-inside: avoid;
+}
+
+.portfolio-grid button {
+    width: 100%;
+}
+
+.portfolio-grid img {
+    width: 100%;
+    vertical-align: middle;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.grid-item {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--dark-color);
+    color: var(--white);
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    padding: 12px;
+    transition: opacity 0.4s ease;
+}
+
+.img-container:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.img-container:hover .caption {
+    opacity: 1;
+}
+
+.grid-item:hover img {
+    transform: scale(1.04);
+    filter: saturate(1.03);
+}
+
+.img-container2 {
+    width: 500px;
+    margin: 0 auto;
+    border: var(--secondary-dark-color) solid 2px;
+}
+
+.img-container2 img {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 8px;
+    border-radius: 4px;
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+/* ---------- 2. Project detail view ---------- */
+
+.hidden {
+    display: none !important;
+}
+
+.project-view {
+    position: fixed;
+    inset: 0;
+    background: var(--white);
+    z-index: 9999;
+    overflow-y: auto;        /* allow scrolling inside the modal */
+    overflow-x: hidden;
+}
+
+.project-nav-top {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 20;
+}
+
+#back-to-grid {
+    color: var(--black);
+    border: none;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+}
+
+.project-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 80px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+#project-title {
+    margin: 0;
+    font-size: clamp(1.2rem, 1.8vw, 2rem);
+}
+
+#project-image {
+    height: 90vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.project-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.watermark-overlay {
+    position: absolute;
+    inset: 0;
+    background: url('../../assets/img/watermark.png') center center / cover no-repeat;
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 2;
+}
+
+#project-description {
+    max-width: 900px;
+    margin: 0;
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+    line-height: 1.4;
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--black);
+    border: none;
+    background: rgba(255, 255, 255, 0.85);
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    padding: 0.6rem 0.9rem;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 20;
+}
+
+#prev-project {
+    left: 20px;
+}
+
+#next-project {
+    right: 20px;
+}

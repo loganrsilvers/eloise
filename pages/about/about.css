@@ -1,16 +1,7 @@
-
-:root{
-    --blue: #283c3b;
-    --dark-color: var(--black);
-    --secondary-dark-color: var(--black);
-    --med-color: var(--black);
-    --secondary-light-color: #eeddd5;
-    --white : #f5f5f5;
-    --black : #111111;
-}
-
-
-
+/* ============================================================
+   about.css: about.html only (profile, software icons, press list)
+   Press cards also use shared/css/components/zigzag-cards.css
+   ============================================================ */
 
 #aboutsection{
     display:flex;
@@ -270,3 +261,9 @@
 
 
 
+
+
+/* Footer sits flush on this page */
+footer {
+    margin-top: -10px;
+}
